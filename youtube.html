@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="icon" type="image/png" href="icons/favicon.png">
+    <!-- Primary Meta Tags -->
+    <title>YouTube.com Clone</title>
+    <meta name="title" content="YouTube Clone" >
+    <meta name="description" content="A YouTube clone made to practice css and html" > 
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="" />
+        <img class="youtube-logo" src="icons/youtube-logo.svg" alt="" />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" alt="" />
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img
+            class="voice-search-icon"
+            src="icons/voice-search-icon.svg"
+            alt=""
+          />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg" alt="" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="" />
+          <div class="tooltip">YouTube apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img
+            class="notifications-icon"
+            src="icons/notifications.svg"
+            alt=""
+          />
+          <div class="tooltip">Notifications</div>
+          <div class="notifications-count">5</div>
+        </div>
+        <img
+          class="current-user-picture"
+          src="channel-pictures/my-channel.jpeg"
+          alt=""
+        />
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg" alt="" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" alt="" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" alt="" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg" alt="" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" alt="" />
+        <div>Youtube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg" alt="" />
+        <div>Library</div>
+      </div>
+    </nav>
+<!-- video grid starts here -->
+<main>
+
+  <section class="video-grid">
+    <div class="video-preview">
+      <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=FRSTaBZfxK4">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="" />
+          </a>
+          <div class="video-time">3:36</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@sdtksOST">
+              <img
+              class="profile-picture"
+              src="channel-pictures/channel-1.jpeg"
+              alt=""
+              />
+            </a>
+            <div class="channel-tooltip">
+              <img
+              class="tooltip-profile-picture"
+              src="channel-pictures/channel-1.jpeg"
+              alt=""
+              />
+              <div>
+                <p class="tooltip-author">SoundtracksOST</p>
+                <p class="tooltip-channel-stats">3.73K subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=FRSTaBZfxK4">
+              <p class="video-title">
+                “Major Crimes” by HEALTH — Cyberpunk: Edgerunners [OST]
+              </p>
+            </a>
+            
+            <p class="video-author">SoundtracksOST</p>
+            <p class="video-stats">499k views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=kqghHMHVUtE">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="" />
+          </a>
+          <div class="video-time">3:50</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/channel/UC2yGvqVB_kK0FC1eUifENGQ">
+              <img
+              class="profile-picture"
+              src="channel-pictures/channel-2.jpeg"
+              alt=""
+              />
+            </a>
+            <div class="channel-tooltip">
+              <img
+              class="tooltip-profile-picture"
+              src="channel-pictures/channel-2.jpeg"
+              alt=""
+              />
+              <div>
+                <p class="tooltip-author">lacunacoil</p>
+                <p class="tooltip-channel-stats">153K subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=kqghHMHVUtE">
+              <p class="video-title">LACUNA COIL - Swamped XX (OFFICIAL VIDEO)</p>
+            </a>
+            
+            <p class="video-author">lacunacoil &#9834</p>
+            <p class="video-stats">1.2M views &#183; 4 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=mH2wmyeiIpA">
+            <img class="thumbnail" src="thumbnails/thumbnail-3.webp" alt="" />
+          </a>
+          
+          <div class="video-time">3:32</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@CyberpunkGame">
+              <img
+              class="profile-picture"
+              src="channel-pictures/channel-3.jpeg"
+              alt=""
+              />
+            </a>
+            <div class="channel-tooltip">
+              <img
+              class="tooltip-profile-picture"
+              src="channel-pictures/channel-3.jpeg"
+              alt=""
+              />
+              <div>
+                <p class="tooltip-author">Cyberpunk 2077</p>
+                <p class="tooltip-channel-stats">1.57M subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=mH2wmyeiIpA">
+              <p class="video-title">
+                Cyberpunk: Edgerunners | This Fffire by Franz Ferdinand | Music Video
+              </p>
+            </a>
+            
+            <p class="video-author">Cyberpunk 2077</p>
+            <p class="video-stats">1.3M views &#183; 2 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=YcM5PHft0EQ">
+            <img class="thumbnail" src="thumbnails/thumbnail-4.webp" alt="" />
+          </a>
+          
+          <div class="video-time">25:50</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@DavidFinchartist">
+              <img
+              class="profile-picture"
+                src="channel-pictures/channel-4.jpeg"
+                alt=""
+                />
+              </a>
+              <div class="channel-tooltip">
+                <img
+                class="tooltip-profile-picture"
+                src="channel-pictures/channel-4.jpeg"
+                alt=""
+                />
+                <div>
+                  <p class="tooltip-author">David Finch</p>
+                  <p class="tooltip-channel-stats">335K subscribers</p>
+                </div>
+              </div>
+            </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=YcM5PHft0EQ">
+              <p class="video-title">
+                How To Draw HANDS
+              </p>
+            </a>
+            
+            <p class="video-author">David Finch</p>
+            <p class="video-stats">886K views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=LxQWv-p5BMQ&">
+            <img class="thumbnail" src="thumbnails/thumbnail-5.webp" alt="" />
+          </a>
+          
+          <div class="video-time">1:02:00</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@ThePrimeThanatos">
+              <img
+              class="profile-picture"
+              src="channel-pictures/channel-5.jpeg"
+              alt=""
+              />
+            </a>
+            <div class="channel-tooltip">
+              <img
+              class="tooltip-profile-picture"
+              src="channel-pictures/channel-5.jpeg"
+              alt=""
+              />
+              <div>
+                <p class="tooltip-author">ThePrimeThanatos</p>
+                <p class="tooltip-channel-stats">462K subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=LxQWv-p5BMQ&">
+              <p class="video-title">
+                'Back To The 80's' | Best of Synthwave And Retro Electro Music Mix | Vol. 22
+              </p>
+            </a>
+            
+            <p class="video-author">ThePrimeThanatos</p>
+            <p class="video-stats">2.9M views &#183; 3 years ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=cbHpMi1mcWQ">
+            <img class="thumbnail" src="thumbnails/thumbnail-6.webp" alt="" />
+          </a>
+          <div class="video-time">4:01</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@macross1843">
+              <img
+              class="profile-picture"
+              src="channel-pictures/channel-6.jpeg"
+              alt=""
+              />
+            </a>
+            <div class="channel-tooltip">
+              <img
+              class="tooltip-profile-picture"
+              src="channel-pictures/channel-6.jpeg"
+              alt=""
+              />
+              <div>
+                <p class="tooltip-author">Macross</p>
+                <p class="tooltip-channel-stats">15 subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=cbHpMi1mcW">
+              <p class="video-title">
+                Drakengard The Rising Fool Battlefield
+              </p>
+            </a>
+            <p class="video-author">Macross</p>
+            <p class="video-stats">2.4K views &#183; 9 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=LXyTZIEQAsI">
+              <img class="thumbnail" src="thumbnails/thumbnail-7.webp" alt="" />
+            </a>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@MusicLabChill">
+                <img
+                class="profile-picture"
+                src="channel-pictures/channel-7.jpg"
+                alt=""
+                />
+              </a>
+              <div class="channel-tooltip">
+                <img
+                class="tooltip-profile-picture"
+                src="channel-pictures/channel-7.jpg"
+                alt=""
+                />
+                <div>
+                  <p class="tooltip-author">Chill Music Lab</p>
+                  <p class="tooltip-channel-stats">826K subscribers</p>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=LXyTZIEQAsI">
+                <p class="video-title">
+                  Music for Work — Chillstep Cyber City Radio
+                </p>
+              </a>
+              
+              <p class="video-author">Chill Music Lab</p>
+              <p class="video-stats">236 watching</p>
+              <div class="live-channel" >
+                <div class="live-icon-container" >
+                  <img class="live-icon" src="icons/live.svg" alt="">
+                </div>
+                <span>LIVE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=HsyvmfdHhtc">
+              <img class="thumbnail" src="thumbnails/thumbnail-8.webp" alt="" />
+            </a>
+            <div class="video-time">28:15</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@DougDeMuro">
+                <img
+                class="profile-picture"
+                src="channel-pictures/channel-8.jpg"
+                alt=""
+                />
+              </a>
+              <div class="channel-tooltip">
+                <img
+                class="tooltip-profile-picture"
+                src="channel-pictures/channel-8.jpg"
+                alt=""
+                />
+                <div>
+                  <p class="tooltip-author">Doug DeMuro</p>
+                  <p class="tooltip-channel-stats">4.57M subscribers</p>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=HsyvmfdHhtc">
+                <p class="video-title">The Spyker C8 Is a Quirky, Beautiful, Amazing Supercar</p>
+              </a>
+              
+              <p class="video-author">Doug DeMuro</p>
+              <p class="video-stats">100K views &#183; 6 hours ago</p>
+            </div>
+          </div>
+        </div>
+       <!-- playlist -->
+        <div class="video-preview">
+          <div class="playlist-thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=xuxWlWkxLDQ&list=RDGMEMWO-g6DgCWEqKlDtKbJA1GwVMxuxWlWkxLDQ&start_radio=1">
+              <img class="thumbnail" src="thumbnails/playlist-thumbnail-1.webp" alt="" />
+            </a>
+            
+            <div class="playlist-tag">
+              <img src="icons/list.svg" alt="">
+            </div>
+            <div class="playlist-play-overlay" >
+              <div class="play-icon" >
+                <img src="icons/play.svg" alt="">
+
+              </div>
+              <div>
+                PLAY ALL
+              </div>
+            </div>
+          </div>
+          <div class="playlist-info-grid">
+            <div class="playlist-info">
+              <a href="https://www.youtube.com/watch?v=xuxWlWkxLDQ&list=RDGMEMWO-g6DgCWEqKlDtKbJA1GwVMxuxWlWkxLDQ&start_radio=1">
+                <p class="video-title">
+                  Mix &minus; Electronic dance music
+                </p>
+              </a>
+              
+              <p class="video-author">Marcin Przybyłowicz, P.T. Adamczyk and more</p>
+            </div>
+          </div>
+        </div>
+        <!-- playlist -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=vEMgZvLcyl4">
+              <img class="thumbnail" src="thumbnails/thumbnail-9.webp" alt="" />
+            </a>
+            
+            <div class="video-time">27:35</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@JacksonCrawford">
+                <img
+                class="profile-picture"
+                  src="channel-pictures/channel-9.jpg"
+                  alt=""
+                  />
+                </a>
+                <div class="channel-tooltip">
+                  <img
+                  class="tooltip-profile-picture"
+                  src="channel-pictures/channel-9.jpg"
+                  alt=""
+                  />
+                  <div>
+                    <p class="tooltip-author">Jackson Crawford</p>
+                    <p class="tooltip-channel-stats">252K subscribers</p>
+                  </div>
+                </div>
+              </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=vEMgZvLcyl4">
+                <p class="video-title">
+                  Runes: Letters, Not Symbols
+                </p>
+              </a>
+              
+              <p class="video-author">Jackson Crawford</p>
+              <p class="video-stats">16K views &#183; 6 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=WbnHutA1u_0">
+              <img class="thumbnail" src="thumbnails/thumbnail-10.webp" alt="" />
+            </a>
+            
+            <div class="video-time">5:31</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@Mana_Thief">
+                <img
+                class="profile-picture"
+                src="channel-pictures/channel-10.jpg"
+                alt=""
+                />
+              </a>
+              <div class="channel-tooltip">
+                <img
+                class="tooltip-profile-picture"
+                src="channel-pictures/channel-10.jpg"
+                alt=""
+                />
+                <div>
+                  <p class="tooltip-author">Mana Thief</p>
+                  <p class="tooltip-channel-stats">4.69K subscribers</p>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=WbnHutA1u_0">
+                <p class="video-title">
+                  Perturbator - Venger [feat. Greta Link] (Unofficial Videoclip)
+                </p>
+              </a>
+              
+              <p class="video-author">Mana Thief</p>
+              <p class="video-stats">5.7M views &#183; 3 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=r8UvWSX3KA8&">
+              <img class="thumbnail" src="thumbnails/thumbnail-11.webp" alt="" />
+            </a>
+            <div class="video-time">1:08:48</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@freecodecamp">
+                <img
+                class="profile-picture"
+                src="channel-pictures/channel-11.jpg"
+                alt=""
+                />
+              </a>
+              <div class="channel-tooltip">
+                <img
+                class="tooltip-profile-picture"
+                src="channel-pictures/channel-11.jpg"
+                alt=""
+                />
+                <div>
+                  <p class="tooltip-author">freeCodeCamp.org</p>
+                  <p class="tooltip-channel-stats">7.11M subscribers</p>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=r8UvWSX3KA8&">
+                <p class="video-title">
+                  OpenTelemetry Course - Understand Software Performance
+                </p>
+              </a>
+              <p class="video-author">freeCodeCamp.org</p>
+              <p class="video-stats">163K views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  </body>
+  </html>
+  
